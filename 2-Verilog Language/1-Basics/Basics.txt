@@ -1,0 +1,149 @@
+*Wire*
+-----------------------------------------------------------
+module top_module( input in, output out );
+assign out = in;
+endmodule
+
+-----------------------------------------------------------
+
+*Wire4*
+-----------------------------------------------------------
+module top_module( 
+    input a,b,c,
+    output w,x,y,z );
+    
+    assign {w,x,y,z} = {a,b,b,c};
+	
+    //Another Solution
+    /*
+    assign w=a;
+    assign x=b;
+    assign y=b;
+    assign z=c;
+    */
+    
+endmodule
+
+
+-----------------------------------------------------------
+
+*Notgate*
+-----------------------------------------------------------
+module top_module( input in, output out );
+assign out = ~in;
+endmodule
+
+
+-----------------------------------------------------------
+
+*Andgate*
+-----------------------------------------------------------
+module top_module( 
+    input a, 
+    input b, 
+    output out );
+
+    assign out = a&b;
+    
+endmodule
+
+
+-----------------------------------------------------------
+
+*Norgate*
+-----------------------------------------------------------
+module top_module( 
+    input a, 
+    input b, 
+    output out );
+    
+    assign out = ~(a|b);
+
+endmodule
+
+
+-----------------------------------------------------------
+
+*Xnorgate*
+-----------------------------------------------------------
+module top_module( 
+    input a, 
+    input b, 
+    output out );
+    
+    assign out = ~(a^b);
+
+endmodule
+
+
+-----------------------------------------------------------
+
+*Wire decl*
+-----------------------------------------------------------
+`default_nettype none
+module top_module(
+    input a,
+    input b,
+    input c,
+    input d,
+    output out,
+    output out_n   ); 
+    
+    //First Solution
+    
+    wire wire1, wire2, wire3;
+    
+    assign wire1 = a&b;
+    assign wire2 = c&d;
+    assign wire3 = wire1|wire2;
+    assign out = wire3;
+    assign out_n = ~wire3;
+    
+    
+    //Second Solution
+    /*
+    wire wire1, wire2;
+    
+    assign wire1 = a&b;
+    assign wire2 = c&d;
+    assign out = wire1|wire2;
+    assign out_n = ~out;
+    */
+
+endmodule
+
+
+-----------------------------------------------------------
+
+*7458 chip*
+-----------------------------------------------------------
+module top_module ( 
+    input p1a, p1b, p1c, p1d, p1e, p1f,
+    output p1y,
+    input p2a, p2b, p2c, p2d,
+    output p2y );
+
+    //First Solution
+    /*
+    assign p1y = (p1a& p1c & p1b) | (p1f & p1e & p1d);  
+    assign p2y = (p2c & p2d) | (p2a & p2b);
+  	*/
+    
+    //Second Solution
+    /*
+    wire and31, and32, and21, and22;
+    
+    assign and31 = p1a& p1c & p1b;
+    assign and32 = p1f & p1e & p1d;
+    assign p1y = and31 | and32;
+    
+    assign and21 = p2c & p2d; 
+    assign and22 = p2a & p2b;
+	assign p2y = and21 | and22;
+    */
+    
+endmodule
+
+
+
+
