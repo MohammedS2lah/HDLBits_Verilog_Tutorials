@@ -1,5 +1,3 @@
-*Wire decl*
------------------------------------------------------------
 `default_nettype none
 module top_module(
     input a,
