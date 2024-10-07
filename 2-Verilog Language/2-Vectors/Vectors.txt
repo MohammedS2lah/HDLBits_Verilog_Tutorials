@@ -1,3 +1,4 @@
+*Vectors*
 *Vector0*
 -------------------------------------------
 module top_module ( 
@@ -23,7 +24,7 @@ module top_module (
 endmodule
 
 -------------------------------------------
-
+*Vectors in more detail*
 *Vector1*
 -------------------------------------------
 `default_nettype none     // Disable implicit nets. Reduces some types of bugs.
@@ -44,7 +45,7 @@ module top_module(
 endmodule
 
 -------------------------------------------
-
+*Vector part select*
 *Vector2*
 -------------------------------------------
 module top_module( 
@@ -65,7 +66,7 @@ module top_module(
 endmodule
 
 -------------------------------------------
-
+*Bitwise operators*
 *Vectorgates*
 -------------------------------------------
 module top_module( 
@@ -85,7 +86,7 @@ module top_module(
 endmodule
 
 -------------------------------------------
-
+*Four-input gates*
 *Gates4*
 -------------------------------------------
 module top_module( 
@@ -114,7 +115,7 @@ module top_module(
 endmodule
 
 -------------------------------------------
-
+*Vector Concatenation operator*
 *Vector3*
 -------------------------------------------
 module top_module (
@@ -126,7 +127,7 @@ module top_module (
 endmodule
 
 -------------------------------------------
-
+*Vector reversal 1*
 *Vectorr*
 -------------------------------------------
 module top_module( 
@@ -142,7 +143,7 @@ module top_module(
 endmodule
 
 -------------------------------------------
-
+*Replication operator*
 *Vector4*
 -------------------------------------------
 module top_module (
@@ -154,7 +155,7 @@ module top_module (
 endmodule
 
 -------------------------------------------
-
+*More replication*
 *Vector5*
 -------------------------------------------
 module top_module (
