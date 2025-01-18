@@ -1,5 +1,5 @@
 #  Verilog Tutorial Solutions - HDLBits Problems
-Welcome to my GitHub repository, where I provide solutions to Verilog challenges from the HDLBits website. Whether you're a beginner looking to enhance your Verilog skills or an advanced learner aiming to refine your expertise, these tutorials will guide you through the key concepts of digital design and hardware description languages (HDL).
+Welcome to my GitHub repository, where I provide solutions to Verilog challenges from the HDLBits website, https://hdlbits.01xz.net/wiki/Main_Page. Whether you're a beginner looking to enhance your Verilog skills or an advanced learner aiming to refine your expertise, these tutorials will guide you through the key concepts of digital design and hardware description languages (HDL).
 #
 ![Screenshot 2025-01-18 044727](https://github.com/user-attachments/assets/de63494a-e288-40b7-b196-7c9bc02a30b4)
 
