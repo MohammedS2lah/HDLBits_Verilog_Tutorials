@@ -19,4 +19,5 @@ This repository contains step-by-step solutions to problems on HDLBits, covering
 - Feel free to clone, fork, and contribute to this repository for your learning purposes.
 # Contributing
 I welcome contributions to improve the solutions or add new ones. Feel free to submit pull requests or raise issues if you have suggestions!
-
+#
+![Screenshot 2025-01-18 044727](https://github.com/user-attachments/assets/7d2b5abe-e04a-46b9-8764-3941398bb512)
